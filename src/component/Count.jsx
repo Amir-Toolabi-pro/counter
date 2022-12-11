@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import "../styles/count.css"
+import style from "../styles/count.css"
 
 
 const Count = () => {
@@ -10,7 +10,7 @@ const Count = () => {
 
     return ( 
         <>
-            <p className="countercontent">Number is <span className={number > 0 ? "uper" : "lower"}> {number}</span></p>
+            <p className={style.countercontent}>Number is <span className={number > 0 ? style.uper : style.lower}> {number}</span></p>
         </>
      );
 }

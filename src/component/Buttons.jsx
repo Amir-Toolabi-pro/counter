@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { decreas, increas } from '../redux/Actions';
 
-import "../styles/buttons.css"
+import style from "../styles/buttons.css"
 
 
 const Button = () => {
@@ -13,9 +13,9 @@ const Button = () => {
 
     return (
         <>
-            <div className="buttoncontent">
-                <button className="firstbutton" onClick={() => dispatch(decreas())}>-</button>
-                <button className="secondbutton" onClick={() => dispatch(increas({ id: 52 }))} >+</button>
+            <div className={style.buttoncontent}>
+                <button className={style.firstbutton} onClick={() => dispatch(decreas())}>-</button>
+                <button className={style.secondbutton} onClick={() => dispatch(increas({ id: 52 }))} >+</button>
             </div>
         </>
     );

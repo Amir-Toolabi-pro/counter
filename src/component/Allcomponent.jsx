@@ -1,11 +1,11 @@
 import Button from "./Buttons";
 import Count from "./Count";
 
-import "../styles/Allcomponent.css"
+import style from "../styles/Allcomponent.css"
 
 const Allcomponent = () => {
     return ( 
-        <div className="content">
+        <div className={style.content}>
             <Button/>
             <Count/>
         </div>
